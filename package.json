@@ -1,1 +1,40 @@
-{     "devDependencies": {         "httpp-proxy": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-httpp-proxy",     "homepage": "https://github.com/npmtest/node-npmtest-httpp-proxy",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-httpp-proxy.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [httpp-proxy (v0.10.3)](https://github.com/InstantWebP2P/node-httpp-proxy#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-httpp-proxy.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-httpp-proxy) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-httpp-proxy.svg)](https://travis-ci.org/npmtest/node-npmtest-httpp-proxy)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "httpp-proxy": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-httpp-proxy",
+    "keywords": [
+        "coverage",
+        "test",
+        "httpp-proxy"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_httpp_proxy.js",
+    "name": "npmtest-httpp-proxy",
+    "nameAlias": "npmtest_httpp_proxy",
+    "nameOriginal": "npmtest-httpp-proxy",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-httpp-proxy.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
