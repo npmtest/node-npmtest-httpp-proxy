@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for node-npmtest-httpp-proxy/node_modules/httpp-proxy/lib/node-http-proxy/http-proxy.js</title>
+    <title>Code coverage report for node-npmtest-httpp-proxy/node_modules/httpp-proxy/lib/node-http-proxy.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,23 +194,23 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-httpp-proxy">npmtest-httpp-proxy (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-httpp-proxy/node_modules/httpp-proxy/lib/node-http-proxy/http-proxy.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-httpp-proxy/node_modules/httpp-proxy/lib/node-http-proxy.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">3.48% <small>(13 / 374)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">1.67% <small>(2 / 120)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">0% <small>(0 / 263)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 100)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">0% <small>(0 / 56)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 32)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">3.57% <small>(13 / 364)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">1.74% <small>(2 / 115)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-httpp-proxy/node_modules/httpp-proxy/lib/node-http-proxy/</a> &#187; http-proxy.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-httpp-proxy/node_modules/httpp-proxy/lib/</a> &#187; node-http-proxy.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -638,714 +638,7 @@
 422
 423
 424
-425
-426
-427
-428
-429
-430
-431
-432
-433
-434
-435
-436
-437
-438
-439
-440
-441
-442
-443
-444
-445
-446
-447
-448
-449
-450
-451
-452
-453
-454
-455
-456
-457
-458
-459
-460
-461
-462
-463
-464
-465
-466
-467
-468
-469
-470
-471
-472
-473
-474
-475
-476
-477
-478
-479
-480
-481
-482
-483
-484
-485
-486
-487
-488
-489
-490
-491
-492
-493
-494
-495
-496
-497
-498
-499
-500
-501
-502
-503
-504
-505
-506
-507
-508
-509
-510
-511
-512
-513
-514
-515
-516
-517
-518
-519
-520
-521
-522
-523
-524
-525
-526
-527
-528
-529
-530
-531
-532
-533
-534
-535
-536
-537
-538
-539
-540
-541
-542
-543
-544
-545
-546
-547
-548
-549
-550
-551
-552
-553
-554
-555
-556
-557
-558
-559
-560
-561
-562
-563
-564
-565
-566
-567
-568
-569
-570
-571
-572
-573
-574
-575
-576
-577
-578
-579
-580
-581
-582
-583
-584
-585
-586
-587
-588
-589
-590
-591
-592
-593
-594
-595
-596
-597
-598
-599
-600
-601
-602
-603
-604
-605
-606
-607
-608
-609
-610
-611
-612
-613
-614
-615
-616
-617
-618
-619
-620
-621
-622
-623
-624
-625
-626
-627
-628
-629
-630
-631
-632
-633
-634
-635
-636
-637
-638
-639
-640
-641
-642
-643
-644
-645
-646
-647
-648
-649
-650
-651
-652
-653
-654
-655
-656
-657
-658
-659
-660
-661
-662
-663
-664
-665
-666
-667
-668
-669
-670
-671
-672
-673
-674
-675
-676
-677
-678
-679
-680
-681
-682
-683
-684
-685
-686
-687
-688
-689
-690
-691
-692
-693
-694
-695
-696
-697
-698
-699
-700
-701
-702
-703
-704
-705
-706
-707
-708
-709
-710
-711
-712
-713
-714
-715
-716
-717
-718
-719
-720
-721
-722
-723
-724
-725
-726
-727
-728
-729
-730
-731
-732
-733
-734
-735
-736
-737
-738
-739
-740
-741
-742
-743
-744
-745
-746
-747
-748
-749
-750
-751
-752
-753
-754
-755
-756
-757
-758
-759
-760
-761
-762
-763
-764
-765
-766
-767
-768
-769
-770
-771
-772
-773
-774
-775
-776
-777
-778
-779
-780
-781
-782
-783
-784
-785
-786
-787
-788
-789
-790
-791
-792
-793
-794
-795
-796
-797
-798
-799
-800
-801
-802
-803
-804
-805
-806
-807
-808
-809
-810
-811
-812
-813
-814
-815
-816
-817
-818
-819
-820
-821
-822
-823
-824
-825
-826
-827
-828
-829
-830
-831
-832
-833
-834
-835
-836
-837
-838
-839
-840
-841
-842
-843
-844
-845
-846
-847
-848
-849
-850
-851
-852
-853
-854
-855
-856
-857
-858
-859
-860
-861
-862
-863
-864
-865
-866
-867
-868
-869
-870
-871
-872
-873
-874
-875
-876
-877
-878
-879
-880
-881
-882
-883
-884
-885
-886
-887
-888
-889
-890
-891
-892
-893
-894
-895
-896
-897
-898
-899
-900
-901
-902
-903
-904
-905
-906
-907
-908
-909
-910
-911
-912
-913
-914
-915
-916
-917
-918
-919
-920
-921
-922
-923
-924
-925
-926
-927
-928
-929
-930
-931
-932
-933
-934
-935
-936
-937
-938
-939
-940
-941
-942
-943
-944
-945
-946
-947
-948
-949
-950
-951
-952
-953
-954
-955
-956
-957
-958
-959
-960
-961
-962
-963
-964
-965
-966
-967
-968
-969
-970
-971
-972
-973
-974
-975
-976
-977
-978
-979
-980
-981
-982
-983
-984
-985
-986
-987
-988
-989
-990
-991
-992
-993
-994
-995
-996
-997
-998
-999
-1000
-1001
-1002
-1003
-1004
-1005
-1006
-1007
-1008
-1009
-1010
-1011
-1012
-1013
-1014
-1015
-1016
-1017
-1018
-1019
-1020
-1021
-1022
-1023
-1024
-1025
-1026
-1027
-1028
-1029
-1030
-1031
-1032
-1033
-1034
-1035
-1036
-1037
-1038
-1039
-1040
-1041
-1042
-1043
-1044
-1045
-1046
-1047
-1048
-1049
-1050
-1051
-1052
-1053
-1054
-1055
-1056
-1057
-1058
-1059
-1060
-1061
-1062
-1063
-1064
-1065
-1066
-1067
-1068
-1069
-1070
-1071
-1072
-1073
-1074
-1075
-1076
-1077
-1078
-1079
-1080
-1081
-1082
-1083
-1084
-1085
-1086
-1087
-1088
-1089
-1090
-1091
-1092
-1093
-1094
-1095
-1096
-1097
-1098
-1099
-1100
-1101
-1102
-1103
-1104
-1105
-1106
-1107
-1108
-1109
-1110
-1111
-1112
-1113
-1114
-1115
-1116
-1117
-1118
-1119
-1120
-1121
-1122
-1123
-1124
-1125
-1126
-1127
-1128
-1129
-1130
-1131
-1132</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+425</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1371,9 +664,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1394,27 +696,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1423,62 +704,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1494,41 +719,6 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1543,51 +733,27 @@
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1596,46 +762,26 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1643,24 +789,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1668,202 +804,116 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1871,14 +921,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1900,46 +944,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1949,530 +961,104 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -2502,1116 +1088,409 @@
 &nbsp;
 */
 &nbsp;
-var events = require('events'),
+var util = require('util'),
     http = require('http'),
-    util = require('util'),
-    url = require('url'),
-    httpProxy = require('../node-http-proxy');
-&nbsp;
-// perf monitor
-<span class="cstat-no" title="statement not covered" >var perfdbg = 0;</span>
-&nbsp;
-//
-// ### function HttpProxy (options)
-// #### @options {Object} Options for this instance.
-// Constructor function for new instances of HttpProxy responsible
-// for managing the life-cycle of streaming reverse proxyied HTTP requests.
-//
-// Example options:
-//
-//      {
-//        target: {
-//          host: 'localhost',
-//          port: 9000
-//        },
-//        forward: {
-//          host: 'localhost',
-//          port: 9001
-//        }
-//      }
-//
-<span class="cstat-no" title="statement not covered" >var HttpProxy = exports.HttpProxy = <span class="fstat-no" title="function not covered" >function (options) {</span></span>
-<span class="cstat-no" title="statement not covered" >  if (!options || !options.target) {</span>
-<span class="cstat-no" title="statement not covered" >    throw new Error('Both `options` and `options.target` are required.');</span>
-  }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  events.EventEmitter.call(this);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  var self  = this;</span>
-  
-  //
-  // Setup basic proxying options:
-  //
-  // * forward {Object} Options for a forward-proxy (if-any)
-  // * target {Object} Options for the **sole** proxy target of this instance
-  //
-<span class="cstat-no" title="statement not covered" >  this.forward  = options.forward;</span>
-<span class="cstat-no" title="statement not covered" >  this.target   = options.target;</span>
-<span class="cstat-no" title="statement not covered" >  this.timeout = options.timeout;</span>
-&nbsp;
-  //
-  // Setup the necessary instances instance variables for
-  // the `target` and `forward` `host:port` combinations
-  // used by this instance.
-  //
-  // * agent {http[s].Agent} Agent to be used by this instance.
-  // * protocol {http|https|httpp|httpps} Core node.js module to make requests with.
-  // * base {Object} Base object to create when proxying containing any https settings.
-  //
-<span class="fstat-no" title="function not covered" >  function setupProxy (key) {</span>
-<span class="cstat-no" title="statement not covered" >    self[key].agent    = httpProxy._getAgent(self[key]);</span>
-<span class="cstat-no" title="statement not covered" >    self[key].protocol = httpProxy._getProtocol(self[key]);</span>
-<span class="cstat-no" title="statement not covered" >    self[key].base     = httpProxy._getBase(self[key]);</span>
-  }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  setupProxy('target');</span>
-<span class="cstat-no" title="statement not covered" >  if (this.forward) {</span>
-<span class="cstat-no" title="statement not covered" >    setupProxy('forward');</span>
-  }
-&nbsp;
-  //
-  // Setup opt-in features
-  //
-<span class="cstat-no" title="statement not covered" >  this.enable          = options.enable || {};</span>
-<span class="cstat-no" title="statement not covered" >  this.enable.xforward = typeof this.enable.xforward === 'boolean'</span>
-    ? this.enable.xforward
-    : true;
-&nbsp;
-  //
-  // Setup additional options for WebSocket proxying. When forcing
-  // the WebSocket handshake to change the `sec-websocket-location`
-  // and `sec-websocket-origin` headers `options.source` **MUST**
-  // be provided or the operation will fail with an `origin mismatch`
-  // by definition.
-  //
-<span class="cstat-no" title="statement not covered" >  this.source       = options.source       || { host: 'localhost', port: 80 };</span>
-<span class="cstat-no" title="statement not covered" >  this.source.https = this.source.https    || options.https;</span>
-<span class="cstat-no" title="statement not covered" >  this.source.httpp = this.source.httpp    || options.httpp;</span>
-<span class="cstat-no" title="statement not covered" >  this.changeOrigin = options.changeOrigin || false;</span>
-};
-&nbsp;
-// Inherit from events.EventEmitter
-<span class="cstat-no" title="statement not covered" >util.inherits(HttpProxy, events.EventEmitter);</span>
+    https = require('https'),
+    httpp = require('httpp'),
+    httpps = require('httpps'),
+    events = require('events'),
+    maxSockets = 100;
 &nbsp;
 //
-// ### function proxyRequest (req, res, buffer)
-// #### @req {ServerRequest} Incoming HTTP Request to proxy.
-// #### @res {ServerResponse} Outgoing HTTP Request to write proxied data to.
-// #### @buffer {Object} Result from `httpProxy.buffer(req)`
+// Expose version information through `pkginfo`.
 //
-<span class="cstat-no" title="statement not covered" >HttpProxy.prototype.proxyRequest = <span class="fstat-no" title="function not covered" >function (req, res, buffer) {</span></span>
-<span class="cstat-no" title="statement not covered" >  var self = this,</span>
-      errState = false,
-      outgoing = new(this.target.base),
-      reverseProxy,
-      location;
+<span class="cstat-no" title="statement not covered" >require('pkginfo')(module, 'version');</span>
 &nbsp;
-  // If this is a DELETE request then set the "content-length"
-  // header (if it is not already set)
-<span class="cstat-no" title="statement not covered" >  if (req.method === 'DELETE') {</span>
-<span class="cstat-no" title="statement not covered" >    req.headers['content-length'] = req.headers['content-length'] || '0';</span>
-  }
+//
+// ### Export the relevant objects exposed by `node-http-proxy`
+//
+<span class="cstat-no" title="statement not covered" >var HttpProxy    = exports.HttpProxy    = require('./node-http-proxy/http-proxy').HttpProxy,</span>
+    ProxyTable   = exports.ProxyTable   = require('./node-http-proxy/proxy-table').ProxyTable,
+    RoutingProxy = exports.RoutingProxy = require('./node-http-proxy/routing-proxy').RoutingProxy;
 &nbsp;
-  //
-  // Add common proxy headers to the request so that they can
-  // be available to the proxy target server. If the proxy is
-  // part of proxy chain it will append the address:
-  //
-  // * `x-forwarded-for`: IP Address of the original request
-  // * `x-forwarded-proto`: Protocol of the original request
-  // * `x-forwarded-port`: Port of the original request.
-  //
-<span class="cstat-no" title="statement not covered" >  if (this.enable.xforward &amp;&amp; req.connection &amp;&amp; req.socket) {</span>
-<span class="cstat-no" title="statement not covered" >    if (req.headers['x-forwarded-for']) {</span>
-<span class="cstat-no" title="statement not covered" >      var addressToAppend = "," + req.connection.remoteAddress || req.socket.remoteAddress;</span>
-<span class="cstat-no" title="statement not covered" >      req.headers['x-forwarded-for'] += addressToAppend;</span>
-    }
-    else {
-<span class="cstat-no" title="statement not covered" >      req.headers['x-forwarded-for'] = req.connection.remoteAddress || req.socket.remoteAddress;</span>
-    }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    if (req.headers['x-forwarded-port']) {</span>
-<span class="cstat-no" title="statement not covered" >      var portToAppend = "," + req.connection.remotePort || req.socket.remotePort;</span>
-<span class="cstat-no" title="statement not covered" >      req.headers['x-forwarded-port'] += portToAppend;</span>
-    }
-    else {
-<span class="cstat-no" title="statement not covered" >      req.headers['x-forwarded-port'] = req.connection.remotePort || req.socket.remotePort;</span>
-    }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    if (req.headers['x-forwarded-proto']) {</span>
-<span class="cstat-no" title="statement not covered" >      var protoToAppend = "," + getProto(req);</span>
-<span class="cstat-no" title="statement not covered" >      req.headers['x-forwarded-proto'] += protoToAppend;</span>
-    }
-    else {
-<span class="cstat-no" title="statement not covered" >      req.headers['x-forwarded-proto'] = getProto(req);</span>
-    }
-  }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  if (this.timeout) {</span>
-<span class="cstat-no" title="statement not covered" >    req.socket.setTimeout(this.timeout);</span>
-  }
+//
+// ### function createServer ([port, host, options, handler])
+// #### @port {number} **Optional** Port to use on the proxy target host.
+// #### @host {string} **Optional** Host of the proxy target.
+// #### @options {Object} **Optional** Options for the HttpProxy instance used
+// #### @handler {function} **Optional** Request handler for the server
+// Returns a server that manages an instance of HttpProxy. Flexible arguments allow for:
+//
+// * `httpProxy.createServer(9000, 'localhost')`
+// * `httpProxy.createServer(9000, 'localhost', options)
+// * `httpPRoxy.createServer(function (req, res, proxy) { ... })`
+//
+<span class="cstat-no" title="statement not covered" >exports.createServer = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >  var args = Array.prototype.slice.call(arguments),</span>
+      handlers = [],
+      callback,
+      options = {},
+      message,
+      handler,
+      server,
+      proxy,
+      host,
+      port;
 &nbsp;
   //
-  // Emit the `start` event indicating that we have begun the proxy operation.
+  // Liberally parse arguments of the form:
   //
-<span class="cstat-no" title="statement not covered" >  this.emit('start', req, res, this.target);</span>
-&nbsp;
+  //    httpProxy.createServer('localhost', 9000, callback);
+  //    httpProxy.createServer({ host: 'localhost', port: 9000 }, callback);
+  //    **NEED MORE HERE!!!**
   //
-  // If forwarding is enabled for this instance, forward proxy the
-  // specified request to the address provided in `this.forward`
-  //
-<span class="cstat-no" title="statement not covered" >  if (this.forward) {</span>
-<span class="cstat-no" title="statement not covered" >    this.emit('forward', req, res, this.forward);</span>
-<span class="cstat-no" title="statement not covered" >    this._forwardRequest(req);</span>
-  }
-&nbsp;
-  //
-  // #### function proxyError (err)
-  // #### @err {Error} Error contacting the proxy target
-  // Short-circuits `res` in the event of any error when
-  // contacting the proxy target at `host` / `port`.
-  //
-<span class="fstat-no" title="function not covered" >  function proxyError(err) {</span>
-<span class="cstat-no" title="statement not covered" >    errState = true;</span>
-&nbsp;
-    //
-    // Emit an `error` event, allowing the application to use custom
-    // error handling. The error handler should end the response.
-    //
-<span class="cstat-no" title="statement not covered" >    if (self.emit('proxyError', err, req, res)) {</span>
-<span class="cstat-no" title="statement not covered" >      return;</span>
-    }
-    
-<span class="cstat-no" title="statement not covered" >    try {</span>
-<span class="cstat-no" title="statement not covered" >      res.writeHead(500, { 'Content-Type': 'text/plain' });</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >      if (req.method !== 'HEAD') {</span>
-        //
-        // This NODE_ENV=production behavior is mimics Express and
-        // Connect.
-        //
-<span class="cstat-no" title="statement not covered" >        if (process.env.NODE_ENV === 'production') {</span>
-<span class="cstat-no" title="statement not covered" >          res.write('Internal Server Error');</span>
-        }
-        else {
-<span class="cstat-no" title="statement not covered" >          res.write('An error has occurred: ' + JSON.stringify(err));</span>
-        }
-      }
-    } 
-    catch (ex) {
-<span class="cstat-no" title="statement not covered" >      console.error("res.writeHead error: %s", ex.message) ;</span>
-    }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    try { <span class="cstat-no" title="statement not covered" >res.end() }</span></span>
-    catch (ex) { <span class="cstat-no" title="statement not covered" >console.error("res.end error: %s", ex.message); </span>}
-  }
-&nbsp;
-  //
-  // Setup outgoing proxy with relevant properties.
-  //
-<span class="cstat-no" title="statement not covered" >  outgoing.host       = this.target.host;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.hostname   = this.target.hostname;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.port       = this.target.port;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.socketPath = this.target.socketPath;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.agent      = this.target.agent;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.method     = req.method;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.path       = req.url.match(/^(https?:)/gi)? url.parse(req.url).path : req.url;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.headers    = req.headers;</span>
-  
-  //
-  // Setup local interface to bind for target network connections
-  // 
-<span class="cstat-no" title="statement not covered" >  outgoing.localAddress = this.target.localAddress;</span>
-  
-  //
-  // Setup custom createConnection
-  //
-<span class="cstat-no" title="statement not covered" >  outgoing.createConnection = this.target.createConnection;</span>
-      
-  // cache origin req.host
-<span class="cstat-no" title="statement not covered" >  this.oriReqHost = req.headers.host;</span>
- 
-  //
-  // If the changeOrigin option is specified, change the
-  // origin of the host header to the target URL! Please
-  // don't revert this without documenting it!
-  //
-<span class="fstat-no" title="function not covered" >  function getPort (port, https) {</span>
-<span class="cstat-no" title="statement not covered" >    port = port || (htpps ? 443 : 80);</span>
-<span class="cstat-no" title="statement not covered" >    return ((port === 80) || (port === 443)) ? '' : ':' + port;</span>
-  }
-  
-<span class="cstat-no" title="statement not covered" >  var protocolName = this.target.https ? 'https' : 'http',</span>
-      portUri      = getPort(this.target.port, this.target.https),
-      remoteHost   = this.target.host + portUri;
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  if (this.changeOrigin) {  </span>
-<span class="cstat-no" title="statement not covered" >    outgoing.headers.host   = remoteHost;</span>
-<span class="cstat-no" title="statement not covered" >    outgoing.headers.origin = protocolName + '://' + remoteHost;</span>
-  }
-&nbsp;
-  //
-  // Open new HTTP request to internal resource with will act
-  // as a reverse proxy pass
-  //
-<span class="cstat-no" title="statement not covered" >  reverseProxy = this.target.protocol.request(outgoing, <span class="fstat-no" title="function not covered" >function (response) {</span></span>
-    //
-    // Process the `reverseProxy` `response` when it's received.
-    //
-<span class="cstat-no" title="statement not covered" >    if (req.httpVersion === '1.0') {</span>
-<span class="cstat-no" title="statement not covered" >      if (req.headers.connection) {</span>
-<span class="cstat-no" title="statement not covered" >        response.headers.connection = req.headers.connection</span>
-      } else {
-<span class="cstat-no" title="statement not covered" >        response.headers.connection = 'close'</span>
-      }
-    } else <span class="cstat-no" title="statement not covered" >if (!response.headers.connection) {</span>
-<span class="cstat-no" title="statement not covered" >      if (req.headers.connection) { <span class="cstat-no" title="statement not covered" >response.headers.connection = req.headers.connection }</span></span>
-      else {
-<span class="cstat-no" title="statement not covered" >        response.headers.connection = 'keep-alive'</span>
-      }
-    }
-&nbsp;
-    // Remove `Transfer-Encoding` header if client's protocol is HTTP/1.0
-    // or if this is a DELETE request with no content-length header.
-    // See: https://github.com/nodejitsu/node-http-proxy/pull/373
-<span class="cstat-no" title="statement not covered" >    if (req.httpVersion === '1.0' || (req.method === 'DELETE'</span>
-      &amp;&amp; !req.headers['content-length'])) {
-<span class="cstat-no" title="statement not covered" >      delete response.headers['transfer-encoding'];</span>
-    }
-&nbsp;
-    // Handle four redirection cases:
-    // 1. redirect to the same target with changeOrigin
-    // 2. redirect to the same target without changeOrigin
-    // 3. redirect to the different target with changeOrigin
-    // 4. redirect to the different target without changeOrigin
-<span class="cstat-no" title="statement not covered" >    var oriReqUrl, sameHost, samePort, sameProto;</span>
-    
-<span class="fstat-no" title="function not covered" >    function isLocalhost(host){</span>
-<span class="cstat-no" title="statement not covered" >	    return ((host === 'localhost') || (host === '127.0.0.1') ||</span>
-	            (host === '0:0:0:0:0:0:0:1') || (host === '::1'));
-    }
-        
-<span class="cstat-no" title="statement not covered" >    if ((response.statusCode === 301 || response.statusCode === 302)</span>
-      &amp;&amp; typeof response.headers.location !== 'undefined') {
-<span class="cstat-no" title="statement not covered" >      location  = url.parse(response.headers.location, true, true);</span>
-<span class="cstat-no" title="statement not covered" >      oriReqUrl = url.parse((self.source.https ? 'https://':'http://')+self.oriReqHost, true, true);</span>
-      
-      // handle default port
-<span class="cstat-no" title="statement not covered" >      location.port  = location.port || ((location.protocol === 'https:') ? 443 : 80);</span>
-<span class="cstat-no" title="statement not covered" >      oriReqUrl.port = oriReqUrl.port || ((oriReqUrl.protocol === 'https:') ? 443 : 80);</span>
-      
-      ///console.log('\n\nproxy,oriReqUrl:'+JSON.stringify(oriReqUrl)+'\nlocation:'+JSON.stringify(location)+
-      ///            '\ntarget.host:'+self.target.host+',target.port:'+self.target.port);
-      
-<span class="cstat-no" title="statement not covered" >      sameHost  = self.changeOrigin ?  </span>
-                  ((location.hostname === self.target.host) || (isLocalhost(location.hostname) &amp;&amp; isLocalhost(self.target.host))) :
-                  ((location.hostname === oriReqUrl.hostname) || (isLocalhost(location.hostname) &amp;&amp; isLocalhost(oriReqUrl.hostname)));
-                  
-<span class="cstat-no" title="statement not covered" >      samePort  = self.changeOrigin ? </span>
-                  (location.port === self.target.port) :
-                  (location.port === oriReqUrl.port);
-                  
-<span class="cstat-no" title="statement not covered" >      sameProto = self.changeOrigin ?</span>
-                 (location.protocol === (self.target.https ? 'https:':'http:')) :
-                 (location.protocol === (self.source.https ? 'https:':'http:'));
-      
-<span class="cstat-no" title="statement not covered" >      if (sameHost &amp;&amp; samePort &amp;&amp; sameProto) {</span>
-<span class="cstat-no" title="statement not covered" >        response.headers.location = (self.source.https ? 'https://' : 'http://') + oriReqUrl.host + location.path;</span>
-      }
-      
-      // case 3&amp;4 should be handled by user custom logics
-      // ...
-    }
-    
-    //
-    // When the `reverseProxy` `response` ends, end the
-    // corresponding outgoing `res` unless we have entered
-    // an error state. In which case, assume `res.end()` has
-    // already been called and the 'error' event listener
-    // removed.
-    //
-<span class="cstat-no" title="statement not covered" >    var ended = false;</span>
-<span class="cstat-no" title="statement not covered" >    response.on('close', <span class="fstat-no" title="function not covered" >function () {</span></span>
-      ///console.log('response.onclose');
-      
-<span class="cstat-no" title="statement not covered" >      if (!ended) { <span class="cstat-no" title="statement not covered" >response.emit('end') }</span></span>
-    });
-&nbsp;
-    //
-    // After reading a chunked response, the underlying socket
-    // will hit EOF and emit a 'end' event, which will abort
-    // the request. If the socket was paused at that time,
-    // pending data gets discarded, truncating the response.
-    // This code makes sure that we flush pending data.
-    //
-<span class="cstat-no" title="statement not covered" >    response.connection.on('end', <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >      if (response.readable &amp;&amp; response.resume) {</span>
-<span class="cstat-no" title="statement not covered" >        response.resume();</span>
-      }
-    });
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    response.on('end', <span class="fstat-no" title="function not covered" >function () {</span></span>
-      ///console.log('response.onend');
-      
-<span class="cstat-no" title="statement not covered" >      ended = true;</span>
-<span class="cstat-no" title="statement not covered" >      if (!errState) {</span>
-<span class="cstat-no" title="statement not covered" >        try { <span class="cstat-no" title="statement not covered" >res.end() }</span></span>
-        catch (ex) { <span class="cstat-no" title="statement not covered" >console.error("res.end error: %s", ex.message) }</span>
-&nbsp;
-        // Emit the `end` event now that we have completed proxying
-<span class="cstat-no" title="statement not covered" >        self.emit('end', req, res, response);</span>
-      }
-    });
-&nbsp;
-    // Allow observer to modify headers or abort response
-<span class="cstat-no" title="statement not covered" >    try { <span class="cstat-no" title="statement not covered" >self.emit('proxyResponse', req, res, response) }</span></span>
-    catch (ex) {
-<span class="cstat-no" title="statement not covered" >      errState = true;</span>
-<span class="cstat-no" title="statement not covered" >      return;</span>
-    }
-    
-    // Set the headers of the client response
-<span class="cstat-no" title="statement not covered" >    Object.keys(response.headers).forEach(<span class="fstat-no" title="function not covered" >function (key) {</span></span>
-<span class="cstat-no" title="statement not covered" >      res.setHeader(key, response.headers[key]);</span>
-    });
-<span class="cstat-no" title="statement not covered" >    res.writeHead(response.statusCode);</span>
-    
-<span class="cstat-no" title="statement not covered" >    var idx = 0;</span>
-<span class="fstat-no" title="function not covered" >    function ondata(chunk) {</span>
-      /*
-        console.log('response.ondata'+idx++);
-        console.log('chunk len:'+chunk.length);
-      */
-      
-<span class="cstat-no" title="statement not covered" >      if (res.writable) {</span>
-        // Only pause if the underlying buffers are full,
-        // *and* the connection is not in 'closing' state.
-        // Otherwise, the pause will cause pending data to
-        // be discarded and silently lost.
-<span class="cstat-no" title="statement not covered" >        if (false === res.write(chunk) &amp;&amp; response.pause</span>
-            &amp;&amp; response.connection.readable) {
-          ///console.log('response.pause(): chunk len:'+chunk.length);
-<span class="cstat-no" title="statement not covered" >          response.pause();</span>
-        }
-      }
-    }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    response.on('data', ondata);</span>
-&nbsp;
-<span class="fstat-no" title="function not covered" >    function ondrain() {</span>
-      ///console.log('res.ondrain');
-      
-<span class="cstat-no" title="statement not covered" >      if (response.readable &amp;&amp; response.resume) {</span>
-        ///console.log('response.resume()');
-<span class="cstat-no" title="statement not covered" >        response.resume();</span>
-      }
-    }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    res.on('drain', ondrain);</span>
+<span class="cstat-no" title="statement not covered" >  args.forEach(<span class="fstat-no" title="function not covered" >function (arg) {</span></span>
+<span class="cstat-no" title="statement not covered" >    arg = Number(arg) || arg;</span>
+<span class="cstat-no" title="statement not covered" >    switch (typeof arg) {</span>
+      case 'string':   <span class="cstat-no" title="statement not covered" >host = arg; <span class="cstat-no" title="statement not covered" ></span>break;</span>
+      case 'number':   <span class="cstat-no" title="statement not covered" >port = arg; <span class="cstat-no" title="statement not covered" ></span>break;</span>
+      case 'object':   <span class="cstat-no" title="statement not covered" >options = arg || {}; <span class="cstat-no" title="statement not covered" ></span>break;</span>
+      case 'function': <span class="cstat-no" title="statement not covered" >callback = arg; <span class="cstat-no" title="statement not covered" ></span>handlers.push(callback); <span class="cstat-no" title="statement not covered" ></span>break;</span>
+    };
   });
 &nbsp;
   //
-  // Handle 'error' events from the `reverseProxy`. Setup timeout override if needed
+  // Helper function to create intelligent error message(s)
+  // for the very liberal arguments parsing performed by
+  // `require('http-proxy').createServer()`.
   //
-<span class="cstat-no" title="statement not covered" >  reverseProxy.once('error', proxyError);</span>
-&nbsp;
-  // Set a timeout on the socket if `this.timeout` is specified.
-<span class="cstat-no" title="statement not covered" >  reverseProxy.once('socket', <span class="fstat-no" title="function not covered" >function (socket) {</span></span>
-<span class="cstat-no" title="statement not covered" >    if (self.timeout) {</span>
-<span class="cstat-no" title="statement not covered" >      socket.setTimeout(self.timeout);</span>
+<span class="fstat-no" title="function not covered" >  function validArguments() {</span>
+<span class="cstat-no" title="statement not covered" >    var conditions = {</span>
+      'port and host': <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        return port &amp;&amp; host;</span>
+      },
+      'options.target or options.router': <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        return options &amp;&amp; (options.router ||</span>
+          (options.target &amp;&amp; options.target.host &amp;&amp; options.target.port));
+      },
+      'or proxy handlers': <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        return handlers &amp;&amp; handlers.length;</span>
+      }
     }
-      
-    // monitor proxy socket perf
-<span class="cstat-no" title="statement not covered" >    if (perfdbg) {</span>
-<span class="cstat-no" title="statement not covered" >      var intl = setInterval(<span class="fstat-no" title="function not covered" >function(){</span></span>
-        ///console.log('socket network performance:'+JSON.stringify(socket.netPerf));
-<span class="cstat-no" title="statement not covered" >        if (socket &amp;&amp; 'netPerf' in socket) {</span>
-<span class="cstat-no" title="statement not covered" >          var perf = socket.netPerf;</span>
-<span class="cstat-no" title="statement not covered" >          if (perf &amp;&amp; 'mbpsBandwidth' in perf) {           </span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network Bandwidth       :'+JSON.stringify(perf.mbpsBandwidth)+' Mb/s');</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network RTT             :'+JSON.stringify(perf.msRTT)+' ms');</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network PktSndPeriod    :'+JSON.stringify(perf.usPktSndPeriod)+' us');</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network SendRate        :'+JSON.stringify(perf.mbpsSendRate)+' Mb/s');</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network RecvRate        :'+JSON.stringify(perf.mbpsRecvRate)+' Mb/s');</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network CongestionWindow:'+JSON.stringify(perf.pktCongestionWindow));</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network RecvACK         :'+JSON.stringify(perf.pktRecvACK));</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network RecvNACK        :'+JSON.stringify(perf.pktRecvNAK));</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network AvailRcvBuf     :'+JSON.stringify(perf.byteAvailRcvBuf));</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network AvailSndBuf     :'+JSON.stringify(perf.byteAvailSndBuf)+'\n\n');</span>
-          }
-        }
-      }, 10000); // every 10000
-      
-      // handle socket close event exception before end event
-<span class="cstat-no" title="statement not covered" >      socket.once('close', <span class="fstat-no" title="function not covered" >function(){</span></span>
-<span class="cstat-no" title="statement not covered" >        clearInterval(intl);</span>
-<span class="cstat-no" title="statement not covered" >        console.log('socket.onclose');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    var missing = Object.keys(conditions).filter(<span class="fstat-no" title="function not covered" >function (name) {</span></span>
+<span class="cstat-no" title="statement not covered" >      return !conditions[name]();</span>
+    });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (missing.length === 3) {</span>
+<span class="cstat-no" title="statement not covered" >      message = 'Cannot proxy without ' + missing.join(', ');</span>
+<span class="cstat-no" title="statement not covered" >      return false;</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return true;</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!validArguments()) {</span>
+    //
+    // If `host`, `port` and `options` are all not passed (with valid
+    // options) then this server is improperly configured.
+    //
+<span class="cstat-no" title="statement not covered" >    throw new Error(message);</span>
+<span class="cstat-no" title="statement not covered" >    return;</span>
+  }
+&nbsp;
+  //
+  // Hoist up any explicit `host` or `port` arguments
+  // that have been passed in to the options we will
+  // pass to the `httpProxy.HttpProxy` constructor.
+  //
+<span class="cstat-no" title="statement not covered" >  options.target      = options.target      || {};</span>
+<span class="cstat-no" title="statement not covered" >  options.target.port = options.target.port || port;</span>
+<span class="cstat-no" title="statement not covered" >  options.target.host = options.target.host || host;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (options.target &amp;&amp; options.target.host &amp;&amp; options.target.port) {</span>
+    //
+    // If an explicit `host` and `port` combination has been passed
+    // to `.createServer()` then instantiate a hot-path optimized
+    // `HttpProxy` object and add the "proxy" middleware layer.
+    //
+<span class="cstat-no" title="statement not covered" >    proxy = new HttpProxy(options);</span>
+<span class="cstat-no" title="statement not covered" >    handlers.push(<span class="fstat-no" title="function not covered" >function (req, res) {</span></span>
+<span class="cstat-no" title="statement not covered" >      proxy.proxyRequest(req, res);</span>
+    });
+  }
+  else {
+    //
+    // If no explicit `host` or `port` combination has been passed then
+    // we have to assume that this is a "go-anywhere" Proxy (i.e. a `RoutingProxy`).
+    //
+<span class="cstat-no" title="statement not covered" >    proxy = new RoutingProxy(options);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (options.router) {</span>
+      //
+      // If a routing table has been supplied than we assume
+      // the user intends us to add the "proxy" middleware layer
+      // for them
+      //
+<span class="cstat-no" title="statement not covered" >      handlers.push(<span class="fstat-no" title="function not covered" >function (req, res) {</span></span>
+<span class="cstat-no" title="statement not covered" >        proxy.proxyRequest(req, res);</span>
+      });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      proxy.on('routes', <span class="fstat-no" title="function not covered" >function (routes) {</span></span>
+<span class="cstat-no" title="statement not covered" >        server.emit('routes', routes);</span>
       });
     }
-  });
-								
-  //
-  // Handle 'error' events from the `req` (e.g. `Parse Error`).
-  //
-<span class="cstat-no" title="statement not covered" >  req.on('error', proxyError);</span>
+  }
 &nbsp;
   //
-  // If `req` is aborted, we abort our `reverseProxy` request as well.
+  // Create the `http[s].Server` instance which will use
+  // an instance of `httpProxy.HttpProxy`.
   //
-<span class="cstat-no" title="statement not covered" >  req.on('aborted', <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >    reverseProxy.abort();</span>
-  });
-&nbsp;
-  //
-  // For each data `chunk` received from the incoming
-  // `req` write it to the `reverseProxy` request.
-  //
-<span class="cstat-no" title="statement not covered" >  req.on('data', <span class="fstat-no" title="function not covered" >function (chunk) {</span></span>
-<span class="cstat-no" title="statement not covered" >    if (!errState) {</span>
-<span class="cstat-no" title="statement not covered" >      var flushed = reverseProxy.write(chunk);</span>
-<span class="cstat-no" title="statement not covered" >      if (!flushed) {</span>
-<span class="cstat-no" title="statement not covered" >        req.pause();</span>
-<span class="cstat-no" title="statement not covered" >        reverseProxy.once('drain', <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >          try { <span class="cstat-no" title="statement not covered" >req.resume() }</span></span>
-          catch (er) { <span class="cstat-no" title="statement not covered" >console.error("req.resume error: %s", er.message) }</span>
-        });
-&nbsp;
-        //
-        // Force the `drain` event in 100ms if it hasn't
-        // happened on its own.
-        //
-<span class="cstat-no" title="statement not covered" >        setTimeout(<span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >          reverseProxy.emit('drain');</span>
-        }, 100);
-      }
-    }
-  });
-&nbsp;
-  //
-  // When the incoming `req` ends, end the corresponding `reverseProxy`
-  // request unless we have entered an error state.
-  //
-<span class="cstat-no" title="statement not covered" >  req.on('end', <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >    if (!errState) {</span>
-<span class="cstat-no" title="statement not covered" >      reverseProxy.end();</span>
-    }
-  });
+<span class="cstat-no" title="statement not covered" >  handler = handlers.length &gt; 1</span>
+    ? exports.stack(handlers, proxy)
+    : <span class="fstat-no" title="function not covered" >function (req, res) {</span> <span class="cstat-no" title="statement not covered" >handlers[0](req, res, proxy) }</span>;
   
   // 
-  // Handle req.trailers
+  // Create or hook existing http/https/httpp/httpps server
   //
-<span class="cstat-no" title="statement not covered" >  if (req.trailers) {</span>
-<span class="cstat-no" title="statement not covered" >    if (!errState) {</span>
-<span class="cstat-no" title="statement not covered" >      reverseProxy.end();</span>
-    }  
-  }
-  
-  //Aborts reverseProxy if client aborts the connection.
-<span class="cstat-no" title="statement not covered" >  req.on('close', <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >    if (!errState) {</span>
-<span class="cstat-no" title="statement not covered" >      reverseProxy.abort();</span>
+<span class="cstat-no" title="statement not covered" >  if (options.server) {</span>
+<span class="cstat-no" title="statement not covered" >    if ((options.httpp &amp;&amp; options.https &amp;&amp; (options.server instanceof httpps)) ||</span>
+        (!options.httpp &amp;&amp; options.https &amp;&amp; (options.server instanceof https)) ||
+        (options.httpp &amp;&amp; !options.https &amp;&amp; (options.server instanceof httpp)) ||
+        (!options.httpp &amp;&amp; !options.https &amp;&amp; (options.server instanceof http))) {
+<span class="cstat-no" title="statement not covered" >      server = options.server;</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >      throw new Error('Invalid http server instance');</span>
+<span class="cstat-no" title="statement not covered" >      return;</span>
     }
+  } else {
+<span class="cstat-no" title="statement not covered" >    server = options.https</span>
+      ? (options.httpp ? httpps.createServer(options.https, handler) : https.createServer(options.https, handler))
+      : (options.httpp ? httpp.createServer(handler) : http.createServer(handler));
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  server.on('close', <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >    proxy.close();</span>
   });
 &nbsp;
-  //
-  // If we have been passed buffered data, resume it.
-  //
-<span class="cstat-no" title="statement not covered" >  if (buffer) {</span>
-<span class="cstat-no" title="statement not covered" >    return !errState</span>
-      ? buffer.resume()
-      : buffer.destroy();
+<span class="cstat-no" title="statement not covered" >  if (!callback) {</span>
+    //
+    // If an explicit callback has not been supplied then
+    // automagically proxy the request using the `HttpProxy`
+    // instance we have created.
+    //
+<span class="cstat-no" title="statement not covered" >    server.on('upgrade', <span class="fstat-no" title="function not covered" >function (req, socket, head) {</span></span>
+<span class="cstat-no" title="statement not covered" >      proxy.proxyWebSocketRequest(req, socket, head);</span>
+    });
   }
+&nbsp;
+  //
+  // Set the proxy on the server so it is available
+  // to the consumer of the server
+  //
+<span class="cstat-no" title="statement not covered" >  server.proxy = proxy;</span>
+<span class="cstat-no" title="statement not covered" >  return server;</span>
 };
 &nbsp;
 //
-// ### function proxyWebSocketRequest (req, socket, head, buffer)
-// #### @req {ServerRequest} Websocket request to proxy.
-// #### @socket {net.Socket} Socket for the underlying HTTP request
-// #### @head {string} Headers for the Websocket request.
-// #### @buffer {Object} Result from `httpProxy.buffer(req)`
-// Performs a WebSocket proxy operation to the location specified by
-// `this.target`.
+// ### function buffer (obj)
+// #### @obj {Object} Object to pause events from
+// Buffer `data` and `end` events from the given `obj`.
+// Consumers of HttpProxy performing async tasks
+// __must__ utilize this utility, to re-emit data once
+// the async operation has completed, otherwise these
+// __events will be lost.__
 //
-<span class="cstat-no" title="statement not covered" >HttpProxy.prototype.proxyWebSocketRequest = <span class="fstat-no" title="function not covered" >function (req, socket, upgradeHead, buffer) {</span></span>
-<span class="cstat-no" title="statement not covered" >  var self      = this,</span>
-      outgoing  = new(this.target.base),
-      listeners = {},
-      errState  = false,
-      CRLF      = '\r\n',
-      //copy upgradeHead to avoid retention of large slab buffers used in node core
-      head = new Buffer(upgradeHead.length);
-<span class="cstat-no" title="statement not covered" >      upgradeHead.copy(head);</span>
+//      var buffer = httpProxy.buffer(req);
+//      fs.readFile(path, function () {
+//         httpProxy.proxyRequest(req, res, host, port, buffer);
+//      });
+//
+// __Attribution:__ This approach is based heavily on
+// [Connect](https://github.com/senchalabs/connect/blob/master/lib/utils.js#L157).
+// However, this is not a big leap from the implementation in node-http-proxy &lt; 0.4.0.
+// This simply chooses to manage the scope of the events on a new Object literal as opposed to
+// [on the HttpProxy instance](https://github.com/nodejitsu/node-http-proxy/blob/v0.3.1/lib/node-http-proxy.js#L154).
+//
+<span class="cstat-no" title="statement not covered" >exports.buffer = <span class="fstat-no" title="function not covered" >function (obj) {</span></span>
+<span class="cstat-no" title="statement not covered" >  var events = [],</span>
+      onData,
+      onEnd;
 &nbsp;
-   ///console.log('\n\nWs, head:'+JSON.stringify(head)+'\n\nreq.headers:'+JSON.stringify(req.headers));
-   ///console.log('\n\nWs,req.headers:'+JSON.stringify(req.headers));
+<span class="cstat-no" title="statement not covered" >  obj.on('data', onData = <span class="fstat-no" title="function not covered" >function (data, encoding) {</span></span>
+<span class="cstat-no" title="statement not covered" >    events.push(['data', data, encoding]);</span>
+  });
 &nbsp;
-  //
-  // WebSocket requests must have the `GET` method and
-  // the `upgrade:websocket` header
-  //
-<span class="cstat-no" title="statement not covered" >  if (req.method !== 'GET' || req.headers.upgrade.toLowerCase() !== 'websocket') {</span>
-    //
-    // This request is not WebSocket request
-    //
-<span class="cstat-no" title="statement not covered" >    return socket.destroy();</span>
-  }
+<span class="cstat-no" title="statement not covered" >  obj.on('end', onEnd = <span class="fstat-no" title="function not covered" >function (data, encoding) {</span></span>
+<span class="cstat-no" title="statement not covered" >    events.push(['end', data, encoding]);</span>
+  });
 &nbsp;
-  //
-  // Add common proxy headers to the request so that they can
-  // be availible to the proxy target server. If the proxy is
-  // part of proxy chain it will append the address:
-  //
-  // * `x-forwarded-for`: IP Address of the original request
-  // * `x-forwarded-proto`: Protocol of the original request
-  // * `x-forwarded-port`: Port of the original request.
-  //
-<span class="cstat-no" title="statement not covered" >  if (this.enable.xforward &amp;&amp; req.connection) {</span>
-<span class="cstat-no" title="statement not covered" >    if (req.headers['x-forwarded-for']) {</span>
-<span class="cstat-no" title="statement not covered" >      var addressToAppend = "," + req.connection.remoteAddress || socket.remoteAddress;</span>
-<span class="cstat-no" title="statement not covered" >      req.headers['x-forwarded-for'] += addressToAppend;</span>
-    }
-    else {
-<span class="cstat-no" title="statement not covered" >      req.headers['x-forwarded-for'] = req.connection.remoteAddress || socket.remoteAddress;</span>
-    }
+<span class="cstat-no" title="statement not covered" >  return {</span>
+    end: <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      obj.removeListener('data', onData);</span>
+<span class="cstat-no" title="statement not covered" >      obj.removeListener('end', onEnd);</span>
+    },
+    destroy: <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      this.end();</span>
+<span class="cstat-no" title="statement not covered" >     	this.resume = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >     	  console.error("Cannot resume buffer after destroying it.");</span>
+     	};
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (req.headers['x-forwarded-port']) {</span>
-<span class="cstat-no" title="statement not covered" >      var portToAppend = "," + req.connection.remotePort || socket.remotePort;</span>
-<span class="cstat-no" title="statement not covered" >      req.headers['x-forwarded-port'] += portToAppend;</span>
-    }
-    else {
-<span class="cstat-no" title="statement not covered" >      req.headers['x-forwarded-port'] = req.connection.remotePort || socket.remotePort;</span>
-    }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    if (req.headers['x-forwarded-proto']) {</span>
-<span class="cstat-no" title="statement not covered" >      var protoToAppend = "," + (req.connection.pair ? 'wss' : 'ws');</span>
-<span class="cstat-no" title="statement not covered" >      req.headers['x-forwarded-proto'] += protoToAppend;</span>
-    }
-    else {
-<span class="cstat-no" title="statement not covered" >      req.headers['x-forwarded-proto'] = req.connection.pair ? 'wss' : 'ws';</span>
-    }
-  }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  self.emit('websocket:start', req, socket, head, this.target);</span>
-&nbsp;
-  //
-  // Helper function for setting appropriate socket values:
-  // 1. Turn off all bufferings
-  // 2. For server set KeepAlive
-  //
-<span class="fstat-no" title="function not covered" >  function _socket(socket, keepAlive) {</span>
-<span class="cstat-no" title="statement not covered" >    socket.setTimeout(0);</span>
-<span class="cstat-no" title="statement not covered" >    socket.setNoDelay(true);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    if (keepAlive) {</span>
-<span class="cstat-no" title="statement not covered" >      if (socket.setKeepAlive) {</span>
-<span class="cstat-no" title="statement not covered" >        socket.setKeepAlive(true, 0);</span>
-      }
-      else <span class="cstat-no" title="statement not covered" >if (socket.pair.cleartext.socket.setKeepAlive) {</span>
-<span class="cstat-no" title="statement not covered" >        socket.pair.cleartext.socket.setKeepAlive(true, 0);</span>
+<span class="cstat-no" title="statement not covered" >     	onData = onEnd = events = obj = null;</span>
+    },
+    resume: <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      this.end();</span>
+<span class="cstat-no" title="statement not covered" >      for (var i = 0, len = events.length; i &lt; len; ++i) {</span>
+<span class="cstat-no" title="statement not covered" >        obj.emit.apply(obj, events[i]);</span>
       }
     }
-  }
-&nbsp;
-  //
-  // Setup the incoming client socket.
-  //
-<span class="cstat-no" title="statement not covered" >  _socket(socket, true);</span>
-&nbsp;
-  //
-  // On `upgrade` from the Agent socket, listen to
-  // the appropriate events.
-  //
-<span class="fstat-no" title="function not covered" >  function onUpgrade (reverseProxy, proxySocket) {</span>
-<span class="cstat-no" title="statement not covered" >    if (!reverseProxy) {</span>
-<span class="cstat-no" title="statement not covered" >      proxySocket.end();</span>
-<span class="cstat-no" title="statement not covered" >      socket.end();</span>
-<span class="cstat-no" title="statement not covered" >      return;</span>
-    }
-&nbsp;
-    //
-    // Any incoming data on this WebSocket to the proxy target
-    // will be written to the `reverseProxy` socket.
-    //
-<span class="cstat-no" title="statement not covered" >    proxySocket.on('data', listeners.onIncoming = <span class="fstat-no" title="function not covered" >function (data) {</span></span>
-<span class="cstat-no" title="statement not covered" >      if (reverseProxy.incoming.socket.writable) {</span>
-<span class="cstat-no" title="statement not covered" >        try {</span>
-<span class="cstat-no" title="statement not covered" >          self.emit('websocket:outgoing', req, socket, head, data);</span>
-<span class="cstat-no" title="statement not covered" >          var flushed = reverseProxy.incoming.socket.write(data);</span>
-<span class="cstat-no" title="statement not covered" >          if (!flushed) {</span>
-<span class="cstat-no" title="statement not covered" >            proxySocket.pause();</span>
-<span class="cstat-no" title="statement not covered" >            reverseProxy.incoming.socket.once('drain', <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >              try { <span class="cstat-no" title="statement not covered" >proxySocket.resume() }</span></span>
-              catch (er) { <span class="cstat-no" title="statement not covered" >console.error("proxySocket.resume error: %s", er.message) }</span>
-            });
-&nbsp;
-            //
-            // Force the `drain` event in 100ms if it hasn't
-            // happened on its own.
-            //
-<span class="cstat-no" title="statement not covered" >            setTimeout(<span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >              reverseProxy.incoming.socket.emit('drain');</span>
-            }, 100);
-          }
-        }
-        catch (ex) {
-<span class="cstat-no" title="statement not covered" >          detach();</span>
-        }
-      }
-    });
-&nbsp;
-    //
-    // Any outgoing data on this Websocket from the proxy target
-    // will be written to the `proxySocket` socket.
-    //
-<span class="cstat-no" title="statement not covered" >    reverseProxy.incoming.socket.on('data', listeners.onOutgoing = <span class="fstat-no" title="function not covered" >function (data) {</span></span>
-<span class="cstat-no" title="statement not covered" >      try {</span>
-<span class="cstat-no" title="statement not covered" >        self.emit('websocket:incoming', reverseProxy, reverseProxy.incoming, head, data);</span>
-<span class="cstat-no" title="statement not covered" >        var flushed = proxySocket.write(data);</span>
-<span class="cstat-no" title="statement not covered" >        if (!flushed) {</span>
-<span class="cstat-no" title="statement not covered" >          reverseProxy.incoming.socket.pause();</span>
-<span class="cstat-no" title="statement not covered" >          proxySocket.once('drain', <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >            try { <span class="cstat-no" title="statement not covered" >reverseProxy.incoming.socket.resume() }</span></span>
-            catch (er) { <span class="cstat-no" title="statement not covered" >console.error("reverseProxy.incoming.socket.resume error: %s", er.message) }</span>
-          });
-&nbsp;
-          //
-          // Force the `drain` event in 100ms if it hasn't
-          // happened on its own.
-          //
-<span class="cstat-no" title="statement not covered" >          setTimeout(<span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >            proxySocket.emit('drain');</span>
-          }, 100);
-        }
-      }
-      catch (ex) {
-<span class="cstat-no" title="statement not covered" >        detach();</span>
-      }
-    });
-&nbsp;
-    //
-    // Helper function to detach all event listeners
-    // from `reverseProxy` and `proxySocket`.
-    //
-<span class="fstat-no" title="function not covered" >    function detach() {</span>
-<span class="cstat-no" title="statement not covered" >      proxySocket.destroySoon();</span>
-<span class="cstat-no" title="statement not covered" >      proxySocket.removeListener('end', listeners.onIncomingClose);</span>
-<span class="cstat-no" title="statement not covered" >      proxySocket.removeListener('data', listeners.onIncoming);</span>
-<span class="cstat-no" title="statement not covered" >      reverseProxy.incoming.socket.destroySoon();</span>
-<span class="cstat-no" title="statement not covered" >      reverseProxy.incoming.socket.removeListener('end', listeners.onOutgoingClose);</span>
-<span class="cstat-no" title="statement not covered" >      reverseProxy.incoming.socket.removeListener('data', listeners.onOutgoing);</span>
-    }
-&nbsp;
-   //
-    // If the incoming `proxySocket` socket closes, then
-    // detach all event listeners.
-    //
-<span class="cstat-no" title="statement not covered" >    listeners.onIncomingClose = <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >      reverseProxy.incoming.socket.destroy();</span>
-<span class="cstat-no" title="statement not covered" >      detach();</span>
-&nbsp;
-      // Emit the `end` event now that we have completed proxying
-<span class="cstat-no" title="statement not covered" >      self.emit('websocket:end', req, socket, head);</span>
-    }
-&nbsp;
-    //
-    // If the `reverseProxy` socket closes, then detach all
-    // event listeners.
-    //
-<span class="cstat-no" title="statement not covered" >    listeners.onOutgoingClose = <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >      proxySocket.destroy();</span>
-<span class="cstat-no" title="statement not covered" >      detach();</span>
-    }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    proxySocket.on('end', listeners.onIncomingClose);</span>
-<span class="cstat-no" title="statement not covered" >    proxySocket.on('close', listeners.onIncomingClose);</span>
-<span class="cstat-no" title="statement not covered" >    reverseProxy.incoming.socket.on('end', listeners.onOutgoingClose);</span>
-<span class="cstat-no" title="statement not covered" >    reverseProxy.incoming.socket.on('close', listeners.onOutgoingClose);</span>
-  }
-&nbsp;
-<span class="fstat-no" title="function not covered" >  function getPort (port, https) {</span>
-<span class="cstat-no" title="statement not covered" >    port = port || (htpps ? 443 : 80);</span>
-<span class="cstat-no" title="statement not covered" >    return ((port === 80) || (port === 443)) ? '' : ':' + port;</span>
-  }
-&nbsp;
-  //
-  // Get the protocol, and host for this request and create an instance
-  // of `http.Agent` or `https.Agent` or `httpp.Agent` or `httpps.Agent`
-  // from the pool managed by `node-http-proxy`.
-  //
-<span class="cstat-no" title="statement not covered" >  var agent        = this.target.agent,</span>
-      protocolName = this.target.https ? 'https' : 'http',
-      portUri      = getPort(this.target.port, this.target.https),
-      remoteHost   = this.target.host + portUri;
-&nbsp;
-  //
-  // Make the outgoing WebSocket request
-  //
-<span class="cstat-no" title="statement not covered" >  outgoing.host    = this.target.host;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.port    = this.target.port;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.method  = 'GET';</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.path    = req.url.match(/^(https?:)/gi)? url.parse(req.url).path : req.url;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.headers = req.headers;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.agent   = agent;</span>
- 
-  // cache origin req.host
-<span class="cstat-no" title="statement not covered" >  this.oriReqHost  = req.headers.host;</span>
- 
-  //
-  // Change headers (if requested).
-  // 
-<span class="cstat-no" title="statement not covered" >  if (this.changeOrigin) {</span>
-<span class="cstat-no" title="statement not covered" >    outgoing.headers.host   = remoteHost;</span>
-<span class="cstat-no" title="statement not covered" >    outgoing.headers.origin = protocolName + '://' + remoteHost;</span>
-  }
-  
-  //
-  // Setup local interface to bind for target network connections
-  // 
-<span class="cstat-no" title="statement not covered" >  outgoing.localAddress = this.target.localAddress;</span>
-  
-  //
-  // Setup custom createConnection
-  //
-<span class="cstat-no" title="statement not covered" >  outgoing.createConnection = this.target.createConnection;</span>
-      
-<span class="cstat-no" title="statement not covered" >  var reverseProxy = this.target.protocol.request(outgoing);</span>
-&nbsp;
-  //
-  // On any errors from the `reverseProxy` emit the
-  // `webSocketProxyError` and close the appropriate
-  // connections.
-  //
-<span class="fstat-no" title="function not covered" >  function proxyError (err) {</span>
-<span class="cstat-no" title="statement not covered" >    reverseProxy.destroy();</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    process.nextTick(<span class="fstat-no" title="function not covered" >function () {</span></span>
-      //
-      // Destroy the incoming socket in the next tick, in case the error handler
-      // wants to write to it.
-      //
-<span class="cstat-no" title="statement not covered" >      socket.destroy();</span>
-    });
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    self.emit('webSocketProxyError', err, req, socket, head);</span>
-  }
-&nbsp;
-  //
-  // Here we set the incoming `req`, `socket` and `head` data to the outgoing
-  // request so that we can reuse this data later on in the closure scope
-  // available to the `upgrade` event. This bookkeeping is not tracked anywhere
-  // in nodejs core and is **very** specific to proxying WebSockets.
-  //
-<span class="cstat-no" title="statement not covered" >  reverseProxy.incoming = {</span>
-    request: req,
-    socket: socket,
-    head: head
   };
+};
 &nbsp;
-  //
-  // Here we set the handshake `headers` and `statusCode` data to the outgoing
-  // request so that we can reuse this data later.
-  //
-<span class="cstat-no" title="statement not covered" >  reverseProxy.handshake = {</span>
-    headers: {},
-    statusCode: null,
-  }
+//
+// ### function getMaxSockets ()
+// Returns the maximum number of sockets
+// allowed on __every__ outgoing request
+// made by __all__ instances of `HttpProxy`
+//
+<span class="cstat-no" title="statement not covered" >exports.getMaxSockets = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >  return maxSockets;</span>
+};
 &nbsp;
-  //
-  // If the agent for this particular `host` and `port` combination
-  // is not already listening for the `upgrade` event, then do so once.
-  // This will force us not to disconnect.
-  //
-  // In addition, it's important to note the closure scope here. Since
-  // there is no mapping of the socket to the request bound to it.
-  //
-<span class="cstat-no" title="statement not covered" >  reverseProxy.on('upgrade', <span class="fstat-no" title="function not covered" >function (res, remoteSocket, head) {</span></span>
-    //
-    // Prepare handshake response 'headers' and 'statusCode'.
-    //
-<span class="cstat-no" title="statement not covered" >    reverseProxy.handshake = {</span>
-      headers: res.headers,
-      statusCode: res.statusCode,
-    }
+//
+// ### function setMaxSockets ()
+// Sets the maximum number of sockets
+// allowed on __every__ outgoing request
+// made by __all__ instances of `HttpProxy`
+//
+<span class="cstat-no" title="statement not covered" >exports.setMaxSockets = <span class="fstat-no" title="function not covered" >function (value) {</span></span>
+<span class="cstat-no" title="statement not covered" >  maxSockets = value;</span>
+};
 &nbsp;
-    //
-    // Prepare the socket for the reverseProxy request and begin to
-    // stream data between the two sockets. Here it is important to
-    // note that `remoteSocket._httpMessage === reverseProxy`.
-    //
-<span class="cstat-no" title="statement not covered" >    _socket(remoteSocket, true);</span>
-<span class="cstat-no" title="statement not covered" >    onUpgrade(remoteSocket._httpMessage, remoteSocket);</span>
-  });
-&nbsp;
-  //
-  // If the reverseProxy connection has an underlying socket,
-  // then execute the WebSocket handshake.
-  //
-<span class="cstat-no" title="statement not covered" >  reverseProxy.once('socket', <span class="fstat-no" title="function not covered" >function (revSocket) {</span></span>
-<span class="cstat-no" title="statement not covered" >    revSocket.on('data', <span class="fstat-no" title="function not covered" >function handshake (data) {</span></span>
-      // Set empty headers
-<span class="cstat-no" title="statement not covered" >      var headers = '';</span>
-&nbsp;
-      //
-      // If the handshake statusCode 101, concat headers.
-      //
-<span class="cstat-no" title="statement not covered" >      if (reverseProxy.handshake.statusCode &amp;&amp; reverseProxy.handshake.statusCode == 101) {</span>
-<span class="cstat-no" title="statement not covered" >        headers = [</span>
-          'HTTP/1.1 101 Switching Protocols',
-          'Upgrade: websocket',
-          'Connection: Upgrade',
-          'Sec-WebSocket-Accept: ' + reverseProxy.handshake.headers['sec-websocket-accept']
-        ];
-&nbsp;
-<span class="cstat-no" title="statement not covered" >        headers = headers.concat('', '').join('\r\n');</span>
-      }
-&nbsp;
-      //
-      // Ok, kind of harmfull part of code. Socket.IO sends a hash
-      // at the end of handshake if protocol === 76, but we need
-      // to replace 'host' and 'origin' in response so we split
-      // data to printable data and to non-printable. (Non-printable
-      // will come after double-CRLF).
-      //
-<span class="cstat-no" title="statement not covered" >      var sdata = data.toString();</span>
-&nbsp;
-      // Get the Printable data
-<span class="cstat-no" title="statement not covered" >      sdata = sdata.substr(0, sdata.search(CRLF + CRLF));</span>
-&nbsp;
-      // Get the Non-Printable data
-<span class="cstat-no" title="statement not covered" >      data = data.slice(Buffer.byteLength(sdata), data.length);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >      if (self.source.https &amp;&amp; !self.target.https) {</span>
-        //
-        // If the proxy server is running HTTPS but the client is running
-        // HTTP then replace `ws` with `wss` in the data sent back to the client.
-        //
-<span class="cstat-no" title="statement not covered" >        sdata = sdata.replace('ws:', 'wss:');</span>
-      }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >      try {</span>
-        //
-        // Write the printable and non-printable data to the socket
-        // from the original incoming request.
-        //
-<span class="cstat-no" title="statement not covered" >        self.emit('websocket:handshake', req, socket, head, sdata, data);</span>
-        // add headers to the socket
-<span class="cstat-no" title="statement not covered" >        socket.write(headers + sdata);</span>
-<span class="cstat-no" title="statement not covered" >        var flushed = socket.write(data);</span>
-<span class="cstat-no" title="statement not covered" >        if (!flushed) {</span>
-<span class="cstat-no" title="statement not covered" >          revSocket.pause();</span>
-<span class="cstat-no" title="statement not covered" >          socket.once('drain', <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >            try { <span class="cstat-no" title="statement not covered" >revSocket.resume() }</span></span>
-            catch (er) { <span class="cstat-no" title="statement not covered" >console.error("reverseProxy.socket.resume error: %s", er.message) }</span>
-          });
-&nbsp;
-          //
-          // Force the `drain` event in 100ms if it hasn't
-          // happened on its own.
-          //
-<span class="cstat-no" title="statement not covered" >          setTimeout(<span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >            socket.emit('drain');</span>
-          }, 100);
-        }
-      }
-      catch (ex) {
-        //
-        // Remove data listener on socket error because the
-        // 'handshake' has failed.
-        //
-<span class="cstat-no" title="statement not covered" >        revSocket.removeListener('data', handshake);</span>
-<span class="cstat-no" title="statement not covered" >        return proxyError(ex);</span>
-      }
-&nbsp;
-      //
-      // Remove data listener now that the 'handshake' is complete
-      //
-<span class="cstat-no" title="statement not covered" >      revSocket.removeListener('data', handshake);</span>
-    });
-  });
-&nbsp;
-  //
-  // Handle 'error' events from the `reverseProxy`.
-  //
-<span class="cstat-no" title="statement not covered" >  reverseProxy.on('error', proxyError);</span>
-  
-<span class="cstat-no" title="statement not covered" >  reverseProxy.once('socket', <span class="fstat-no" title="function not covered" >function (socket) {    </span></span>
-    // monitor proxy socket perf
-<span class="cstat-no" title="statement not covered" >    if (perfdbg) {</span>
-<span class="cstat-no" title="statement not covered" >      var intl = setInterval(<span class="fstat-no" title="function not covered" >function(){</span></span>
-        ///console.log('socket network performance:'+JSON.stringify(socket.netPerf));
-<span class="cstat-no" title="statement not covered" >        if (socket &amp;&amp; 'netPerf' in socket) {</span>
-<span class="cstat-no" title="statement not covered" >          var perf = socket.netPerf;</span>
-          
-<span class="cstat-no" title="statement not covered" >          if (perf &amp;&amp; 'mpbsBandwidth' in perf) {           </span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network Bandwidth       :'+JSON.stringify(perf.mbpsBandwidth)+' Mb/s');</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network RTT             :'+JSON.stringify(perf.msRTT)+' ms');</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network PktSndPeriod    :'+JSON.stringify(perf.usPktSndPeriod)+' us');</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network SendRate        :'+JSON.stringify(perf.mbpsSendRate)+' Mb/s');</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network RecvRate        :'+JSON.stringify(perf.mbpsRecvRate)+' Mb/s');</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network CongestionWindow:'+JSON.stringify(perf.pktCongestionWindow));</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network RecvACK         :'+JSON.stringify(perf.pktRecvACK));</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network RecvNACK        :'+JSON.stringify(perf.pktRecvNAK));</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network AvailRcvBuf     :'+JSON.stringify(perf.byteAvailRcvBuf));</span>
-<span class="cstat-no" title="statement not covered" >            console.log('socket network AvailSndBuf     :'+JSON.stringify(perf.byteAvailSndBuf)+'\n\n');</span>
+//
+// ### function stack (middlewares, proxy)
+// #### @middlewares {Array} Array of functions to stack.
+// #### @proxy {HttpProxy|RoutingProxy} Proxy instance to
+// Iteratively build up a single handler to the `http.Server`
+// `request` event (i.e. `function (req, res)`) by wrapping
+// each middleware `layer` into a `child` middleware which
+// is in invoked by the parent (i.e. predecessor in the Array).
+//
+// adapted from https://github.com/creationix/stack
+//
+<span class="cstat-no" title="statement not covered" >exports.stack = <span class="fstat-no" title="function not covered" >function stack (middlewares, proxy) {</span></span>
+<span class="cstat-no" title="statement not covered" >  var handle;</span>
+<span class="cstat-no" title="statement not covered" >  middlewares.reverse().forEach(<span class="fstat-no" title="function not covered" >function (layer) {</span></span>
+<span class="cstat-no" title="statement not covered" >    var child = handle;</span>
+<span class="cstat-no" title="statement not covered" >    handle = <span class="fstat-no" title="function not covered" >function (req, res) {</span></span>
+<span class="cstat-no" title="statement not covered" >      var next = <span class="fstat-no" title="function not covered" >function (err) {</span></span>
+<span class="cstat-no" title="statement not covered" >        if (err) {</span>
+<span class="cstat-no" title="statement not covered" >          if (res._headerSent) {</span>
+<span class="cstat-no" title="statement not covered" >            res.destroy();</span>
           }
+          else {
+<span class="cstat-no" title="statement not covered" >            res.statusCode = 500;</span>
+<span class="cstat-no" title="statement not covered" >            res.setHeader('Content-Type', 'text/plain');</span>
+<span class="cstat-no" title="statement not covered" >            res.end('Internal Server Error');</span>
+          }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          console.error('Error in middleware(s): %s', err.stack);</span>
+<span class="cstat-no" title="statement not covered" >          return;</span>
         }
-      }, 10000); // every 10000
-      
-      // handle socket close event exception before end event
-<span class="cstat-no" title="statement not covered" >      socket.once('close', <span class="fstat-no" title="function not covered" >function(){</span></span>
-<span class="cstat-no" title="statement not covered" >        clearInterval(intl);</span>
-<span class="cstat-no" title="statement not covered" >        console.log('socket.onclose');</span>
-      });
-    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (child) {</span>
+<span class="cstat-no" title="statement not covered" >          child(req, res);</span>
+        }
+      };
+&nbsp;
+      //
+      // Set the prototype of the `next` function to the instance
+      // of the `proxy` so that in can be used interchangably from
+      // a `connect` style callback and a true `HttpProxy` object.
+      //
+      // e.g. `function (req, res, next)` vs. `function (req, res, proxy)`
+      //
+<span class="cstat-no" title="statement not covered" >      next.__proto__ = proxy;</span>
+<span class="cstat-no" title="statement not covered" >      layer(req, res, next);</span>
+    };
   });
 &nbsp;
-  //
-  // Handle 'error' events from the `req` (e.g. `Parse Error`).
-  //
-<span class="cstat-no" title="statement not covered" >  req.on('error', proxyError);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  try {</span>
-    //
-    // Attempt to write the upgrade-head to the reverseProxy
-    // request. This is small, and there's only ever one of
-    // it; no need for pause/resume.
-    //
-    // XXX This is very wrong and should be fixed in node's core
-    //
-<span class="cstat-no" title="statement not covered" >    reverseProxy.write(head);</span>
-<span class="cstat-no" title="statement not covered" >    if (head &amp;&amp; head.length === 0) {</span>
-<span class="cstat-no" title="statement not covered" >      reverseProxy._send('');</span>
-    }
-  }
-  catch (ex) {
-<span class="cstat-no" title="statement not covered" >    return proxyError(ex);</span>
-  }
-&nbsp;
-  //
-  // If we have been passed buffered data, resume it.
-  //
-<span class="cstat-no" title="statement not covered" >  if (buffer) {</span>
-<span class="cstat-no" title="statement not covered" >    return !errState</span>
-      ? buffer.resume()
-      : buffer.destroy();
-  }
+<span class="cstat-no" title="statement not covered" >  return handle;</span>
 };
 &nbsp;
 //
-// ### function close()
-// Closes all sockets associated with the Agents
-// belonging to this instance.
+// ### function _getAgent (host, port, secure)
+// #### @options {Object} Options to use when creating the agent.
 //
-<span class="cstat-no" title="statement not covered" >HttpProxy.prototype.close = <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >  [this.forward, this.target].forEach(<span class="fstat-no" title="function not covered" >function (proxy) {</span></span>
-<span class="cstat-no" title="statement not covered" >    if (proxy &amp;&amp; proxy.agent) {</span>
-<span class="cstat-no" title="statement not covered" >      for (var host in proxy.agent.sockets) {</span>
-<span class="cstat-no" title="statement not covered" >        proxy.agent.sockets[host].forEach(<span class="fstat-no" title="function not covered" >function (socket) {</span></span>
-<span class="cstat-no" title="statement not covered" >          socket.end();</span>
-        });
+//    {
+//      host: 'localhost',
+//      port: 9000,
+//      https: true,
+//      httpp: false,
+//      maxSockets: 100
+//    }
+//
+// Createsan agent from the `http` or `https` or `httpp` or `httpps` module
+// and sets the `maxSockets` property appropriately.
+//
+<span class="cstat-no" title="statement not covered" >exports._getAgent = <span class="fstat-no" title="function not covered" >function _getAgent (options) {</span></span>
+<span class="cstat-no" title="statement not covered" >  if (!options || !options.host) {</span>
+<span class="cstat-no" title="statement not covered" >    throw new Error('`options.host` is required to create an Agent.');</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!options.port) {</span>
+<span class="cstat-no" title="statement not covered" >    options.port = options.https ? 443 : 80;</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  var Agent = options.https ? </span>
+             (options.httpp ? httpps.Agent : https.Agent) : (options.httpp ? httpp.Agent : http.Agent),
+      agent;
+&nbsp;
+  // require('http-proxy').setMaxSockets() should override http's default
+  // configuration value (which is pretty low).
+<span class="cstat-no" title="statement not covered" >  options.maxSockets = options.maxSockets || maxSockets;</span>
+  
+  // set SSL related info
+<span class="cstat-no" title="statement not covered" >  if (options.https &amp;&amp; typeof options.https === 'object') {</span>
+<span class="cstat-no" title="statement not covered" >    ['pfx', 'key', 'passphrase', 'cert', 'ca', 'ciphers', 'rejectUnauthorized'].forEach(<span class="fstat-no" title="function not covered" >function (key) {</span></span>
+<span class="cstat-no" title="statement not covered" >      if (options.https[key]) {</span>
+<span class="cstat-no" title="statement not covered" >        options[key] = options.https[key];</span>
       }
-    }
-  });
-};
-&nbsp;
-//
-// ### @private function _forwardRequest (req)
-// #### @req {ServerRequest} Incoming HTTP Request to proxy.
-// Forwards the specified `req` to the location specified
-// by `this.forward` ignoring errors and the subsequent response.
-//
-<span class="cstat-no" title="statement not covered" >HttpProxy.prototype._forwardRequest = <span class="fstat-no" title="function not covered" >function (req) {</span></span>
-<span class="cstat-no" title="statement not covered" >  var self = this,</span>
-      outgoing = new(this.forward.base),
-      forwardProxy;
-&nbsp;
-  //
-  // Setup outgoing proxy with relevant properties.
-  //
-<span class="cstat-no" title="statement not covered" >  outgoing.host    = this.forward.host;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.port    = this.forward.port,</span>
-  outgoing.agent   = this.forward.agent;
-<span class="cstat-no" title="statement not covered" >  outgoing.method  = req.method;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.path    = req.url.match(/^(https?:)/gi)? url.parse(req.url).path : req.url;</span>
-<span class="cstat-no" title="statement not covered" >  outgoing.headers = req.headers;</span>
-  
-  //
-  // Setup local interface to bind for target network connections
-  // 
-<span class="cstat-no" title="statement not covered" >  outgoing.localAddress = this.forward.localAddress;</span>
-  
-  //
-  // Setup custom createConnection
-  //
-<span class="cstat-no" title="statement not covered" >  outgoing.createConnection = this.forward.createConnection;</span>
-        
-  //
-  // Open new HTTP request to internal resource with will
-  // act as a reverse proxy pass.
-  //
-<span class="cstat-no" title="statement not covered" >  forwardProxy = this.forward.protocol.request(outgoing, <span class="fstat-no" title="function not covered" >function (response) {</span></span>
-    //
-    // Ignore the response from the forward proxy since this is a 'fire-and-forget' proxy.
-    // Remark (indexzero): We will eventually emit a 'forward' event here for performance tuning.
-    //
-  });
-&nbsp;
-  //
-  // Add a listener for the connection timeout event.
-  //
-  // Remark: Ignoring this error in the event
-  //         forward target doesn't exist.
-  //
-<span class="cstat-no" title="statement not covered" >  forwardProxy.once('error', <span class="fstat-no" title="function not covered" >function (err) {</span> });</span>
-&nbsp;
-  //
-  // Chunk the client request body as chunks from
-  // the proxied request come in
-  //
-<span class="cstat-no" title="statement not covered" >  req.on('data', <span class="fstat-no" title="function not covered" >function (chunk) {</span></span>
-<span class="cstat-no" title="statement not covered" >    var flushed = forwardProxy.write(chunk);</span>
-<span class="cstat-no" title="statement not covered" >    if (!flushed) {</span>
-<span class="cstat-no" title="statement not covered" >      req.pause();</span>
-<span class="cstat-no" title="statement not covered" >      forwardProxy.once('drain', <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >        try { <span class="cstat-no" title="statement not covered" >req.resume() }</span></span>
-        catch (er) { <span class="cstat-no" title="statement not covered" >console.error("req.resume error: %s", er.message) }</span>
-      });
-&nbsp;
-      //
-      // Force the `drain` event in 100ms if it hasn't
-      // happened on its own.
-      //
-<span class="cstat-no" title="statement not covered" >      setTimeout(<span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >        forwardProxy.emit('drain');</span>
-      }, 100);
-    }
-  });
-&nbsp;
-  //
-  // At the end of the client request, we are going to
-  // stop the proxied request
-  //
-<span class="cstat-no" title="statement not covered" >  req.on('end', <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >    forwardProxy.end();</span>
-  });
-  
-  // 
-  // Handle req.trailers
-  //
-<span class="cstat-no" title="statement not covered" >  if (req.trailers) {</span>
-<span class="cstat-no" title="statement not covered" >    forwardProxy.end();</span>
+    });
   }
+  
+<span class="cstat-no" title="statement not covered" >  agent = new Agent(options);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return agent;</span>
+}
+&nbsp;
+//
+// ### function _getProtocol (options)
+// #### @options {Object} Options for the proxy target.
+// Returns the appropriate node.js core protocol module (i.e. `http` or `https` or `httpp` or `httpps`) 
+// based on the `options` supplied. 
+//
+<span class="cstat-no" title="statement not covered" >exports._getProtocol = <span class="fstat-no" title="function not covered" >function _getProtocol (options) {</span></span>
+<span class="cstat-no" title="statement not covered" >  return options.https ? (options.httpp ? httpps : https) : (options.httpp ? httpp : http);</span>
 };
 &nbsp;
-<span class="fstat-no" title="function not covered" >function getProto(req) {</span>
-<span class="cstat-no" title="statement not covered" >  return req.isSpdy ? 'https' : (req.connection.pair ? 'https' : 'http');</span>
-}
+&nbsp;
+//
+// ### function _getBase (options)
+// #### @options {Object} Options for the proxy target.
+// Returns the relevate base object to create on outgoing proxy request.
+// If `options.https` are supplied, this function respond with an object
+// containing the relevant 'pfx', 'key', 'passphrase', 'cert', 'ca', 'ciphers', and 'rejectUnauthorized' properties.
+//
+<span class="cstat-no" title="statement not covered" >exports._getBase = <span class="fstat-no" title="function not covered" >function _getBase (options) {</span></span>
+<span class="cstat-no" title="statement not covered" >  var result = <span class="fstat-no" title="function not covered" >function () {</span>};</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (options.https &amp;&amp; typeof options.https === 'object') {</span>
+<span class="cstat-no" title="statement not covered" >    ['pfx', 'key', 'passphrase', 'cert', 'ca', 'ciphers', 'rejectUnauthorized'].forEach(<span class="fstat-no" title="function not covered" >function (key) {</span></span>
+<span class="cstat-no" title="statement not covered" >      if (options.https[key]) {</span>
+<span class="cstat-no" title="statement not covered" >        result.prototype[key] = options.https[key];</span>
+      }
+    });
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return result;</span>
+};
 &nbsp;
 &nbsp;</pre></td></tr>
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 12:29:03 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Thu Apr 27 2017 21:16:45 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
